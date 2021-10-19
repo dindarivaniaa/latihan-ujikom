@@ -1,4 +1,4 @@
- <!-- Sidenav -->
+<!-- Sidenav -->
  <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
     <div class="scrollbar-inner">
       <!-- Brand -->
@@ -17,26 +17,27 @@
                 <i class="ni ni-tv-2 text-primary"></i>
                 <span class="nav-link-text">Dashboard</span>
               </a>
-            </li> <li class="nav-item">
-              <a class="nav-link" href="profile.html">
-                <i class="ni ni-single-02 text-yellow"></i>
-                <span class="nav-link-text">Profile</span>
-              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="icons.html">
+              <a class="nav-link"  href="{{ url('/profile') }}">
+                <i class="ni ni-single-02 text-yellow"></i>
+                <span class="nav-link-active">profil</span>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="{{ url('/jadwal') }}">
                 <i class="ni ni-books text-orange"></i>
                 <span class="nav-link-text">Jadwal</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="map.html">
+              <a class="nav-link" href="{{ url('/soal') }}">
                 <i class="ni ni-ruler-pencil text-primary"></i>
                 <span class="nav-link-text">Soal</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="tables.html">
+              <a class="nav-link active" href="{{ url('/hasil') }}">
                 <i class="ni ni-bullet-list-67 text-default"></i>
                 <span class="nav-link-text">Hasil</span>
               </a>
