@@ -24,3 +24,10 @@ Route::get('/profile', 'ProfileController@profile');
 Route::get('/jadwal', 'jadwalController@jadwal');
 Route::get('/soal', 'soalController@soal');
 Route::get('/hasil', 'hasilController@hasil');
+
+Route::get('logout',function(){
+    Auth::logout();
+    return redirect('login');
+});
+
+
