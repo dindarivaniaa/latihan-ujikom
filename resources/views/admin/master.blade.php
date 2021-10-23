@@ -35,7 +35,7 @@
 </head>
 
 <body>
-    @include('template.sidebar')
+    @include('admin.sidebar')
   <!-- Main content -->
 
     @include('template.header')

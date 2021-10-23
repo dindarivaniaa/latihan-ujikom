@@ -1,13 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
 
 class hasilcontroller extends Controller
 {
     public function hasil()
     {
-        return view ('fitur.hasil');
+        return view ('admin.hasil');
     }
 }
