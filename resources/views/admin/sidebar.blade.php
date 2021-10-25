@@ -25,31 +25,31 @@
                 </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="{{ url('admin/jadwal') }}">
+              <a class="nav-link {{ url()->current() == url('admin/jadwal') ? 'active' :''}}"  href="{{ url('admin/jadwal') }}">
                 <i class="ni ni-books text-orange"></i>
                 <span class="nav-link-text">Jadwal</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('admin/soal') }}">
+              <a class="nav-link {{ url()->current() == url('admin/soal') ? 'active' :''}}" href="{{ url('admin/soal') }}">
                 <i class="ni ni-ruler-pencil text-primary"></i>
                 <span class="nav-link-text">Soal</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="{{ url('admin/hasil') }}">
+              <a class="nav-link {{ url()->current() == url('admin/hasil') ? 'active' :''}}" href="{{ url('admin/hasil') }}">
                 <i class="ni ni-bullet-list-67 text-default"></i>
                 <span class="nav-link-text">Hasil</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="{{ url('admin/kelolaguru') }}">
+              <a class="nav-link {{ url()->current() == url(admin/kelola guru') ? 'active' :''}}" href="{{ url('admin/kelolaguru') }}">
                 <i class="ni ni-bullet-list-67 text-default"></i>
                 <span class="nav-link-text">Kelola guru</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="{{ url('admin/kelolasiswa') }}">
+              <a class="nav-link {{ url()->current() == url('admin/kelolasiswa') ? 'active' :''}}" href="{{ url('admin/kelolasiswa') }}">
                 <i class="ni ni-bullet-list-67 text-default"></i>
                 <span class="nav-link-text">Kelola Siswa</span>
               </a>

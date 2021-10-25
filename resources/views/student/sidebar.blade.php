@@ -13,31 +13,31 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('student/dashboard') }}">
+              <a class="nav-link {{ url()->current() == url('student/home') ? 'active' :''}}" href="{{ url('student/home') }}">
                 <i class="ni ni-tv-2 text-primary"></i>
                 <span class="nav-link-text">Dashboard Siswa</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="{{ url('student/profile') }}">
+              <a class="nav-link {{ url()->current() == url('student/profile') ? 'active' :''}}"  href="{{ url('student/profile') }}">
                 <i class="ni ni-single-02 text-yellow"></i>
                 <span class="nav-link-active">profil</span>
                 </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="{{ url('student/jadwal') }}">
+              <a class="nav-link {{ url()->current() == url('student/jadwal') ? 'active' :''}}" href="{{ url('student/jadwal') }}">
                 <i class="ni ni-books text-orange"></i>
                 <span class="nav-link-text">Jadwal</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('student/soal') }}">
+              <a class="nav-link {{ url()->current() == url('student/soal') ? 'active' :''}}" href="{{ url('student/soal') }}">
                 <i class="ni ni-ruler-pencil text-primary"></i>
                 <span class="nav-link-text">Soal</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="{{ url('student/hasil') }}">
+              <a class="nav-link {{ url()->current() == url('student/hasil') ? 'active' :''}}" href="{{ url('student/hasil') }}">
                 <i class="ni ni-bullet-list-67 text-default"></i>
                 <span class="nav-link-text">Hasil</span>
               </a>
