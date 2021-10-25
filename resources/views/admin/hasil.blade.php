@@ -1,8 +1,6 @@
 @extends('admin.master')
 
 @section('content')
-
-<h1>ini hasil</h1>
 <table class="table">
   <thead>
     <tr>
@@ -17,14 +15,14 @@
       <th scope="row">1</th>
       <td>Luqman</td>
       <td>80</td>
-      <td><button type="button" class="btn btn-primary">Update</button>
+      <td><button type="button" class="btn btn-primary">Edit</button>
       <button type="button" class="btn btn-danger">Delete</button></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Rehan</td>
       <td>90</td>
-      <td><button type="button" class="btn btn-primary">UPDATE</button>
+      <td><button type="button" class="btn btn-primary">Edit</button>
       <button type="button" class="btn btn-danger">Delete</button></td>
     </tr>
   </tbody>
