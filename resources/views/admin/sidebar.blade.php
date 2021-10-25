@@ -18,12 +18,6 @@
                 <span class="nav-link-text">Dashboard Admin</span>
               </a>
             </li>
-            {{-- <li class="nav-item">
-              <a class="nav-link"  href="{{ url('admin/profile') ? 'active' :''}}" href="{{ url('admin/profile') }}">
-                <i class="ni ni-single-02 text-yellow"></i>
-                <span class="nav-link-active">profil</span>
-                </a>
-            </li> --}}
             <li class="nav-item">
               <a class="nav-link {{ url()->current() == url('admin/jadwal') ? 'active' :''}}"  href="{{ url('admin/jadwal') }}">
                 <i class="ni ni-books text-orange"></i>
@@ -43,7 +37,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{ url()->current() == url(admin/kelolaguru') ? 'active' :''}}" href="{{ url('admin/kelolaguru') }}">
+              <a class="nav-link {{ url()->current() == url('admin/kelolaguru') ? 'active' :''}}" href="{{ url('admin/kelolaguru') }}">
                 <i class="ni ni-bullet-list-67 text-default"></i>
                 <span class="nav-link-text">Kelola guru</span>
               </a>
