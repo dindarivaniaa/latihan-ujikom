@@ -43,7 +43,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{ url()->current() == url(admin/kelola guru') ? 'active' :''}}" href="{{ url('admin/kelolaguru') }}">
+              <a class="nav-link {{ url()->current() == url('admin/kelolaguru') ? 'active' :''}}" href="{{ url('admin/kelolaguru') }}">
                 <i class="ni ni-bullet-list-67 text-default"></i>
                 <span class="nav-link-text">Kelola guru</span>
               </a>
