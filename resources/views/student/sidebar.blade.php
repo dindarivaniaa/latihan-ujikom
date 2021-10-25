@@ -18,12 +18,12 @@
                 <span class="nav-link-text">Dashboard Siswa</span>
               </a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
               <a class="nav-link {{ url()->current() == url('student/profile') ? 'active' :''}}"  href="{{ url('student/profile') }}">
                 <i class="ni ni-single-02 text-yellow"></i>
                 <span class="nav-link-active">profil</span>
                 </a>
-            </li>
+            </li> --}}
             <li class="nav-item">
               <a class="nav-link {{ url()->current() == url('student/jadwal') ? 'active' :''}}" href="{{ url('student/jadwal') }}">
                 <i class="ni ni-books text-orange"></i>
