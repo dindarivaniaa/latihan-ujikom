@@ -2,6 +2,6 @@
 
 @section('content')
 
-<h1>ini dashboard</h1>
+<h1>Selamat Datang Di Website Ujian Online</h1>
 
 @endsection
