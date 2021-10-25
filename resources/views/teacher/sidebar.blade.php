@@ -19,12 +19,6 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="{{ url('teacher/profile') }}">
-                <i class="ni ni-single-02 text-yellow"></i>
-                <span class="nav-link-active">profil</span>
-                </a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link"  href="{{ url('teacher/jadwal') }}">
                 <i class="ni ni-books text-orange"></i>
                 <span class="nav-link-text">Jadwal</span>

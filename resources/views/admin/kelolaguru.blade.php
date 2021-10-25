@@ -2,7 +2,6 @@
 
 @section('content')
 
-<h1>ini kelola guru</h1>
 <table class="table">
   <thead>
     <tr>

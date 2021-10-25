@@ -43,7 +43,7 @@
 
     @yield('content')
 
-      @include('template.footer')
+      @include('admin.footer')
 
   <!-- Argon Scripts -->
   <!-- Core -->

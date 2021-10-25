@@ -54,7 +54,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">John Snow</h4>
+                            <h4 class="mb-0 text-sm">admin</h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>2 hrs ago</small>
@@ -73,7 +73,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">John Snow</h4>
+                            <h4 class="mb-0 text-sm">admin</h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>3 hrs ago</small>
@@ -92,7 +92,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">John Snow</h4>
+                            <h4 class="mb-0 text-sm">admin</h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>5 hrs ago</small>
@@ -111,7 +111,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">John Snow</h4>
+                            <h4 class="mb-0 text-sm">admin</h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>2 hrs ago</small>
@@ -130,7 +130,7 @@
                       <div class="col ml--2">
                         <div class="d-flex justify-content-between align-items-center">
                           <div>
-                            <h4 class="mb-0 text-sm">John Snow</h4>
+                            <h4 class="mb-0 text-sm">admin</h4>
                           </div>
                           <div class="text-right text-muted">
                             <small>3 hrs ago</small>
@@ -199,7 +199,7 @@
                     <img alt="Image placeholder" src="../assets/img/theme/team-4.jpg">
                   </span>
                   <div class="media-body  ml-2  d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
+                    <span class="mb-0 text-sm  font-weight-bold">admin</span>
                   </div>
                 </div>
               </a>
@@ -207,9 +207,9 @@
                 <div class="dropdown-header noti-title">
                   <h6 class="text-overflow m-0">Welcome!</h6>
                 </div>
-                <a href="#!" class="dropdown-item">
+                <a href="http://localhost:8000/admin/profile" class="dropdown-item">
                   <i class="ni ni-single-02"></i>
-                  <span>My profile</span>
+                  <span>profile</span>
                 </a>
                 <a href="#!" class="dropdown-item">
                   <i class="ni ni-settings-gear-65"></i>
