@@ -1,8 +1,6 @@
 @extends('student.master')
 
 @section('content')
-
-<h1>ini jadwal</h1>
 <table class="table">
   <thead>
     <tr>
