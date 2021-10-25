@@ -34,6 +34,10 @@ class LoginController extends Controller
      *
      * @return void
      */
+
+    protected $redirectTo = RouteServiceProvider::HOME;
+
+
     public function __construct()
     {
         // $this->redirectTo = route('web/dashboard');
@@ -43,13 +47,13 @@ class LoginController extends Controller
 
     protected function authenticated(Request $request, $user)
     {
-        if ($user->hasRole('admin')){
-            return redirect()->route('admin/home');
-        }else if ($user->hasRole('teacher')){
-            return redirect()->route('teacher/home');
-        }else{
-            return redirect()->route('student/home');
-        }
+        // if ($user->hasRole('admin')){
+        //     return redirect()->route('admin/home');
+        // }else if ($user->hasRole('teacher')){
+        //     return redirect()->route('teacher/home');
+        // }else{
+        //     return redirect()->route('student/home');
+        // }
 
 }
 }

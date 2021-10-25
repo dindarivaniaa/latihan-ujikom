@@ -16,7 +16,7 @@ class CreateGuruTable extends Migration
         Schema::create('guru', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->srting('matapelajaran');
+            $table->string('mata pelajaran');
             $table->timestamps();
         });
     }

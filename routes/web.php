@@ -21,29 +21,45 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::middleware(['auth', 'role:admin|teacher|student'])->group(function () {
+    Route::get('home', 'HomeController@index')->name('home');
+});
+
 // Admin
-Route::get('admin/home', 'Admin\HomeController@index')->name('admin/home');
-Route::get('admin/profile', 'Admin\ProfileController@profile');
-Route::get('admin/jadwal', 'Admin\jadwalController@jadwal');
-Route::get('admin/soal', 'Admin\soalController@soal');
-Route::get('admin/hasil', 'Admin\hasilController@hasil');
-Route::get('admin/kelolasiswa', 'Admin\KelolasiswaController@index');
-Route::get('admin/kelolaguru', 'Admin\KelolaguruController@index');
+Route::middleware(['auth', 'role:admin'])->group(function () {
+    Route::get('admin/profile', 'Admin\ProfileController@profile');
+    Route::get('admin/jadwal', 'Admin\jadwalController@jadwal');
+    Route::get('admin/soal', 'Admin\soalController@soal');
+    Route::get('admin/hasil', 'Admin\hasilController@hasil');
+    Route::get('admin/kelolasiswa', 'Admin\KelolasiswaController@index');
+    Route::get('admin/kelolaguru', 'Admin\KelolaguruController@index');
+});
 
-// Teacher
-Route::get('teacher/home', 'Teacher\HomeController@index')->name('teacher/home');;
-Route::get('teacher/profile', 'Teacher\ProfileController@index');
-Route::get('teacher/jadwal', 'Teacher\JadwalController@index');
-Route::get('teacher/hasil', 'Teacher\HasilController@index');
-Route::get('teacher/soal', 'Teacher\SoalController@index');
-Route::get('teacher/kelolasiswa', 'Teacher\KelolasiswaController@index');
+Route::middleware(['auth', 'role:teacher'])->group(function () {
+   // Teacher
+   Route::get('teacher/profile', 'Teacher\ProfileController@index');
+   Route::get('teacher/jadwal', 'Teacher\JadwalController@index');
+   Route::get('teacher/hasil', 'Teacher\HasilController@index');
+   Route::get('teacher/soal', 'Teacher\SoalController@index');
+   Route::get('teacher/kelolasiswa', 'Teacher\KelolasiswaController@index');
+});
 
-// Student
-Route::get('student/home', 'Student\HomeController@index')->name('student/home');;
-Route::get('student/profile', 'Student\ProfileController@index');
-Route::get('student/jadwal', 'Student\JadwalController@index');
-Route::get('student/hasil', 'Student\HasilController@index');
-Route::get('student/soal', 'Student\SoalController@index');
+Route::middleware(['auth', 'role:student'])->group(function () {
+    // Student
+    Route::get('student/profile', 'Student\ProfileController@index');
+    Route::get('student/jadwal', 'Student\JadwalController@index');
+    Route::get('student/hasil', 'Student\HasilController@index');
+    Route::get('student/soal', 'Student\SoalController@index');
+});
+
+
+
+
+
+
+
+
+
 
 
 Route::get('logout',function(){

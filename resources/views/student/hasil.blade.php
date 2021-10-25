@@ -1,4 +1,4 @@
-@extends('student.master')
+@extends('template.main')
 
 @section('content')
 <table class="table">
@@ -13,7 +13,7 @@
     <tr>
       <th scope="row">1</th>
       <td>Luqman</td>
-      <td>80</td>
+      <td>1200</td>
     </tr>
     <tr>
       <th scope="row">2</th>
