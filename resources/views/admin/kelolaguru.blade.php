@@ -1,8 +1,6 @@
 @extends('admin.master')
 
 @section('content')
-
-<h1>ini kelola guru</h1>
 <table class="table">
   <thead>
     <tr>
@@ -17,14 +15,14 @@
       <th scope="row">1</th>
       <td>Leni</td>
       <td>B.Indo</td>
-      <td><button type="button" class="btn btn-primary">Update</button>
+      <td><button type="button" class="btn btn-warning">Edit</button>
       <button type="button" class="btn btn-danger">Delete</button></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Siti Saadah</td>
       <td>PKN</td>
-      <td><button type="button" class="btn btn-primary">UPDATE</button>
+      <td><button type="button" class="btn btn-warning">Edit</button>
       <button type="button" class="btn btn-danger">Delete</button></td>
     </tr>
   </tbody>
