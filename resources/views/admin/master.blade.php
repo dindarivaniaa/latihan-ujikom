@@ -38,7 +38,7 @@
     @include('admin.sidebar')
   <!-- Main content -->
 
-    @include('template.header')
+    @include('admin.header')
 
 
     @yield('content')
