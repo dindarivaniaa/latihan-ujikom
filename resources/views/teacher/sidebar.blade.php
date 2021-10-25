@@ -19,31 +19,31 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="{{ url('teacher/profile') }}">
+              <a class="nav-link {{ url()->current() == url('teacher/profile') ? 'active' :''}}"  href="{{ url('teacher/profile') }}">
                 <i class="ni ni-single-02 text-yellow"></i>
                 <span class="nav-link-active">profil</span>
                 </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="{{ url('teacher/jadwal') }}">
+              <a class="nav-link {{ url()->current() == url('teacher/jadwal') ? 'active' :''}}"  href="{{ url('teacher/jadwal') }}">
                 <i class="ni ni-books text-orange"></i>
                 <span class="nav-link-text">Jadwal</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('teacher/soal') }}">
+              <a class="nav-link {{ url()->current() == url('teacher/soal') ? 'active' :''}}" href="{{ url('teacher/soal') }}">
                 <i class="ni ni-ruler-pencil text-primary"></i>
                 <span class="nav-link-text">Soal</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="{{ url('teacher/hasil') }}">
+              <a class="nav-link {{ url()->current() == url('student/hasil') ? 'active' :''}}" href="{{ url('teacher/hasil') }}">
                 <i class="ni ni-bullet-list-67 text-default"></i>
                 <span class="nav-link-text">Hasil</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="{{ url('teacher/kelolasiswa') }}">
+              <a class="nav-link {{ url()->current() == url('teacher/kelola siswa') ? 'active' :''}}" href="{{ url('teacher/kelolasiswa') }}">
                 <i class="ni ni-bullet-list-67 text-default"></i>
                 <span class="nav-link-text">Kelola Siswa</span>
               </a>
