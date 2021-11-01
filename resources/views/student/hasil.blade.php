@@ -13,7 +13,7 @@
     <tr>
       <th scope="row">1</th>
       <td>Luqman</td>
-      <td>1200</td>
+      <td>100</td>
     </tr>
     <tr>
       <th scope="row">2</th>

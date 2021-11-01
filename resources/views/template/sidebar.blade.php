@@ -22,7 +22,7 @@
             <li class="nav-item">
               <a class="nav-link {{ url()->current() == url('admin/jadwal') ? 'active' :''}}"  href="{{ url('admin/jadwal') }}">
                 <i class="ni ni-books text-orange"></i>
-                <span class="nav-link-text">Jadwal</span>
+                <span class="nav-link-text">Mata Pelajaran</span>
               </a>
             </li>
             <li class="nav-item">
@@ -96,7 +96,7 @@
             <li class="nav-item">
               <a class="nav-link {{ url()->current() == url('teacher/jadwal') ? 'active' :''}}"  href="{{ url('teacher/jadwal') }}">
                 <i class="ni ni-books text-orange"></i>
-                <span class="nav-link-text">Jadwal</span>
+                <span class="nav-link-text">Mata Pelajran</span>
               </a>
             </li>
             <li class="nav-item">
@@ -164,7 +164,7 @@
             <li class="nav-item">
               <a class="nav-link {{ url()->current() == url('student/jadwal') ? 'active' :''}}" href="{{ url('student/jadwal') }}">
                 <i class="ni ni-books text-orange"></i>
-                <span class="nav-link-text">Jadwal</span>
+                <span class="nav-link-text">Mata Pelajaran</span>
               </a>
             </li>
             <li class="nav-item">

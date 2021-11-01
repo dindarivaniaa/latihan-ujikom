@@ -11,35 +11,17 @@
     </tr>
   </thead>
   <tbody>
+      @foreach($siswa as $s)
     <tr>
       <th scope="row">1</th>
-      <td>1920.10.36</td>
-      <td>Luqman</td>
-      <td><button type="button" class="btn btn-warning">Edit</button>
-      <button type="button" class="btn btn-danger">Delete</button></td>
+      <td>{{ $s->nis }}</td>
+      <td>{{ $s->nama }}</td>
+      <td><td><a href="/admin/editkelolaguruview/{{ $s->id }}" class="btn btn-success btn-lg">Edit</a>
+        <a href="" class="btn btn-danger btn-lg">Delete</a></td></td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>1920.10.35</td>
-      <td>Rehan</td>
-      <td><button type="button" class="btn btn-warning">Edit</button>
-      <button type="button" class="btn btn-danger">Delete</button></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>1920.10.34</td>
-      <td>Yunita</td>
-      <td><button type="button" class="btn btn-warning">Edit</button>
-      <button type="button" class="btn btn-danger">Delete</button></td>
-    </tr>
-     <tr>
-      <th scope="row">4</th>
-      <td>1920.10.33</td>
-      <td>Dinda</td>
-      <td><button type="button" class="btn btn-warning">Edit</button>
-      <button type="button" class="btn btn-danger">Delete</button></td>
-    </tr>
+
   </tbody>
+      @endforeach
 </table>
 
 @endsection
