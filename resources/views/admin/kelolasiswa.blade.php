@@ -2,6 +2,8 @@
 
 @section('content')
 <table class="table">
+  <br>
+  <table class="table table-bordered table-striped">
   <thead>
     <tr>
       <th scope="col">No</th>
