@@ -11,21 +11,16 @@
     </tr>
   </thead>
   <tbody>
+    @foreach($guru as $g)
     <tr>
       <th scope="row">1</th>
-      <td>Leni</td>
-      <td>B.Indo</td>
-      <td><button type="button" class="btn btn-warning">Edit</button>
-      <button type="button" class="btn btn-danger">Delete</button></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Siti Saadah</td>
-      <td>PKN</td>
-      <td><button type="button" class="btn btn-warning">Edit</button>
-      <button type="button" class="btn btn-danger">Delete</button></td>
+      <td>{{ $g->nama }}</td>
+      <td>{{ $g->mapel }}</td>
+      <td><a href="/admin/editkelolaguruview/{{ $g->id }}" class="btn btn-success btn-lg">Edit</a>
+        <a href="" class="btn btn-danger btn-lg">Delete</a></td>
     </tr>
   </tbody>
+    @endforeach
 </table>
 
 
