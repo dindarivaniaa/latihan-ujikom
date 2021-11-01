@@ -46,18 +46,13 @@
           </div>
         </div>
         <ul class="navbar-nav mr-auto">
-          {{-- <li class="nav-item">
-            <a href="dashboard.html" class="nav-link">
-              <span class="nav-link-inner--text">Dashboard</span>
-            </a>
-          </li> --}}
           <li class="nav-item">
-            <a href="/login" class="nav-link">
-              <span class="nav-link-inner--text">login</span>
+            <a href="{{url('login')}}" class="nav-link">
+              <span class="nav-link-inner--text">Login</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="/register" class="nav-link">
+            <a href="{{url('register')}}" class="nav-link">
               <span class="nav-link-inner--text">Register</span>
             </a>
           </li>
@@ -82,20 +77,6 @@
               <span class="nav-link-inner--text d-lg-none">youtube</span>
             </a>
           </li>
-          {{-- <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial" target="_blank" data-toggle="tooltip" data-original-title="Star us on Github">
-              <i class="fab fa-github"></i>
-              <span class="nav-link-inner--text d-lg-none">Github</span>
-            </a>
-          </li> --}}
-          {{-- <li class="nav-item d-none d-lg-block ml-lg-4">
-            <a href="https://www.creative-tim.com/product/argon-dashboard-pro?ref=ad_upgrade_pro" target="_blank" class="btn btn-neutral btn-icon">
-              <span class="btn-inner--icon">
-                <i class="fas fa-shopping-cart mr-2"></i>
-              </span>
-              <span class="nav-link-inner--text"></span>
-            </a>
-          </li> --}}
         </ul>
       </div>
     </div>
@@ -208,16 +189,6 @@
         </div>
         <div class="col-xl-6">
           <ul class="nav nav-footer justify-content-center justify-content-xl-end">
-            {{-- <li class="nav-item">
-              <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Kelompok 1</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">Tentang Kita</a>
-            </li>
-            <li class="nav-item">
-              <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
-            </li>
-             --}}
              <li class="nav-item">
               <a href="https://www.facebook.com/SMKMAHAPUTRACERDASUTAMA" class="nav-link" target="_blank">SMK Mahaputra</a>
             </li>
