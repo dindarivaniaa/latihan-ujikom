@@ -12,11 +12,21 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Luqman</td>
-      <td>1200</td>
+      <td>Dinda</td>
+      <td>99</td>
     </tr>
     <tr>
       <th scope="row">2</th>
+      <td>Yunita</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Luqman</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
       <td>Rehan</td>
       <td>90</td>
     </tr>
