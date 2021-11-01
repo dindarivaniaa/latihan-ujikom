@@ -33,6 +33,12 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('admin/hasil', 'Admin\hasilController@hasil');
     Route::get('admin/kelolasiswa', 'Admin\KelolasiswaController@index');
     Route::get('admin/kelolaguru', 'Admin\KelolaguruController@index');
+    Route::get('admin/editkelolaguruview/{id}', 'Admin\KelolaguruController@editview');
+    Route::post('admin/editkelolaguru', 'Admin\kelolaguruController@edit');
+    Route::get('admin/editkelolasiswaview/{id}', 'Admin\kelolasiswaController@editview');
+    Route::post('admin/editkelolasiswa', 'Admin\kelolasiswaController@edit');
+
+
 });
 
 Route::middleware(['auth', 'role:teacher'])->group(function () {
@@ -42,6 +48,9 @@ Route::middleware(['auth', 'role:teacher'])->group(function () {
    Route::get('teacher/hasil', 'Teacher\HasilController@index');
    Route::get('teacher/soal', 'Teacher\SoalController@index');
    Route::get('teacher/kelolasiswa', 'Teacher\KelolasiswaController@index');
+   Route::get('teacher/editkelolasiswaview/{id}', 'Teacher\kelolasiswaController@editview');
+   Route::post('teacher/editkelolasiswa', 'Teacher\kelolasiswaController@edit');
+
 });
 
 Route::middleware(['auth', 'role:student'])->group(function () {
