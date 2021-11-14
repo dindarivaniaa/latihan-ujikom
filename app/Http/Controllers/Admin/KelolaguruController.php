@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
+use App\user;
+use Illuminate\Support\Facades\Hash;
 
 
 
@@ -25,5 +27,20 @@ class KelolaguruController extends Controller
             'mapel' => $request->mapel
         ]);
         return redirect('/admin/kelolaguru');
+    }
+
+    // tambah guru
+    public function tambahguru(){
+        return view ('admin.tambahguru');
+    }
+
+    public function store(Request $request){
+        $user= User::create([
+            'name' => $request['name'],
+            'email' => $request['email'],
+            'password' => Hash::make($request['password']),
+        ]);
+        $user->assignRole('teacher');
+        return redirect ('admin/kelolaguru');
     }
 }

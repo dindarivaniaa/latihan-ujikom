@@ -37,6 +37,9 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::post('admin/editkelolaguru', 'Admin\kelolaguruController@edit');
     Route::get('admin/editkelolasiswaview/{id}', 'Admin\kelolasiswaController@editview');
     Route::post('admin/editkelolasiswa', 'Admin\kelolasiswaController@edit');
+    // tambah guru
+    Route::get('admin/tambahguru', 'Admin\KelolaguruController@tambahguru');
+    Route::post('admin/storeguru', 'Admin\KelolaguruController@store');
 
 
 });

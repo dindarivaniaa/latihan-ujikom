@@ -28,9 +28,12 @@
     <div class="col">
       <div class="card">
         <!-- Card header -->
-        <div class="card-header border-0">
-          <h3 class="mb-0">Mata Pelajaran</h3>
+        <div class="col-lg-6 col-5 card-header border-0">
+          <h2 class="mb-3">Guru</h2>
+          <a href="{{url('admin/tambahguru')}}" class="btn btn-sm btn-neutral">Tambah Guru</a>
         </div>
+        <div class="col-lg-6 col-5 text-right">
+          </div>
         <!-- Light table -->
         <div class="table-responsive">
           <table class="table align-items-center table-flush">
@@ -42,7 +45,7 @@
                 <th scope="col"></th>
                 <th scope="col" class="sort" data-sort="completion">action</th>
                 <th scope="col"></th>
-              </tr> 
+              </tr>
             </thead>
             <tbody class="list">
               <tr>
@@ -58,7 +61,7 @@
                 </td>
                 <td>
                   <span class="badge badge-dot mr-4">
-                   
+
                     <span class="status"></span>
                   </span>
                 </td>
@@ -93,7 +96,7 @@
                 </td>
                 <td>
                   <span class="badge badge-dot mr-4">
-                    
+
                   </span>
                 </td>
                 <td>
@@ -128,7 +131,7 @@
                 </td>
                 <td>
                   <span class="badge badge-dot mr-4">
-                   
+
                   </span>
                 </td>
                 <td>
@@ -164,7 +167,7 @@
                 </td>
                 <td>
                   <span class="badge badge-dot mr-4">
-                   
+
                   </span>
                 </td>
                 <td>
@@ -199,7 +202,7 @@
                   </td>
                   <td>
                     <span class="badge badge-dot mr-4">
-                      
+
                     </span>
                   </td>
                   <td>
@@ -253,4 +256,4 @@
       </div>
     </div>
   </div>
-      @endsection   
+      @endsection

@@ -183,9 +183,10 @@
           <div class="col-lg-6 col-md-8">
             <div class="card bg-secondary border-0">
               <div class="card-header bg-transparent pb-5">
-                <div class="text-muted text-center mt-2 mb-4"><small>Sign up </small></div>
+                <div class="text-muted text-center mt-2 mb-2">REGISTER </div>
               </div>
               <div class="card-body px-lg-5 py-lg-5">
+
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
 
@@ -219,7 +220,7 @@
 
                   </div>
                   <div class="form-group">
-                    <div class="input-group input-group-merge input-group-alternative mb-3">
+                    <div class="input-group input-group-merge input-group-alternative mb-4">
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                       </div>
@@ -241,19 +242,16 @@
                     </div>
                   </div>
 
-                  <div class="text-muted font-italic"><small>password strength: <span class="text-success font-weight-700">strong</span></small></div>
+
                   <div class="row my-4">
                     <div class="col-12">
                       <div class="custom-control custom-control-alternative custom-checkbox">
                         <input class="custom-control-input" id="customCheckRegister" type="checkbox">
-                        <label class="custom-control-label" for="customCheckRegister">
-                          <span class="text-muted">I agree with the <a href="#!">Privacy Policy</a></span>
-                        </label>
                       </div>
                     </div>
                   </div>
                   <div class="text-center">
-                    <button type="submit" class="btn btn-primary mt-4">Create account</button>
+                    <button type="submit" class="btn btn-primary mt-4">Buat Akun</button>
                   </div>
                 </form>
               </div>
