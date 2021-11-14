@@ -40,7 +40,9 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     // tambah guru
     Route::get('admin/tambahguru', 'Admin\KelolaguruController@tambahguru');
     Route::post('admin/storeguru', 'Admin\KelolaguruController@store');
-
+    // tambah siswa
+    Route::get('admin/tambahsiswa','Admin\kelolasiswaController@tambahsiswa');
+    Route::post('admin/storesiswa','Admin\kelolasiswaController@store');
 
 });
 

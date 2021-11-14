@@ -29,7 +29,7 @@
       <div class="card">
         <!-- Card header -->
         <div class="col-lg-6 col-5 card-header border-0">
-          <h2 class="mb-3">Guru</h2>
+          <h2 class="mb-3">Kelola Guru</h2>
           <a href="{{url('admin/tambahguru')}}" class="btn btn-sm btn-neutral">Tambah Guru</a>
         </div>
         <div class="col-lg-6 col-5 text-right">
