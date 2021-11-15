@@ -55,6 +55,9 @@ Route::middleware(['auth', 'role:teacher'])->group(function () {
    Route::get('teacher/kelolasiswa', 'Teacher\KelolasiswaController@index');
    Route::get('teacher/editkelolasiswaview/{id}', 'Teacher\kelolasiswaController@editview');
    Route::post('teacher/editkelolasiswa', 'Teacher\kelolasiswaController@edit');
+   //  tambah siswa
+   Route::get('teacher/tambahsiswa','teacher\kelolasiswaController@tambahsiswa');
+   Route::post('teacher/storesiswa','teacher\kelolasiswaController@store');
 
 });
 
