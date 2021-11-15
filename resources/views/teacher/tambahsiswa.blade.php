@@ -67,7 +67,6 @@
                     </div>
                   </div>
 
-
                   <div class="row my-4">
                     <div class="col-12">
                       <div class="custom-control custom-control-alternative custom-checkbox">

@@ -27,7 +27,7 @@ class KelolasiswaController extends Controller
         return redirect('/teacher/kelolasiswa');
     }
 
-     // tambah siswa
+     //  tambah siswa
      public function tambahsiswa(){
         return view ('teacher.tambahsiswa');
     }
