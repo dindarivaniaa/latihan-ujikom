@@ -40,190 +40,30 @@
             <thead class="thead-light">
               <tr>
                 <th scope="col" class="sort" data-sort="name">Pengajar</th>
+                <th scope="col" class="sort" data-sort="name">NIP</th>
+                <th scope="col" class="sort" data-sort="budget">Jenis Kelamin</th>
                 <th scope="col" class="sort" data-sort="budget">Mata Pelajaran</th>
-                <th scope="col" class="sort" data-sort="status"></th>
-                <th scope="col"></th>
                 <th scope="col" class="sort" data-sort="completion">action</th>
                 <th scope="col"></th>
               </tr>
             </thead>
             <tbody class="list">
-              <tr>
-                <th scope="row">
-                  <div class="media align-items-center">
-                    <div class="media-body">
-                      <span class="name mb-0 text-sm">Raynaldi syaputra nonci</span>
-                    </div>
-                  </div>
-                </th>
-                <td class="budget">
-                  PBO
-                </td>
-                <td>
-                  <span class="badge badge-dot mr-4">
 
-                    <span class="status"></span>
-                  </span>
-                </td>
-                <td>
-                  <span class="text-muted"></span>
-                </td>
-                <td><button type="button" class="btn btn-primary">edit</button>
-                  <button type="button" class="btn btn-danger">hapus</button></td>
-                <td class="text-right">
-                  <div class="dropdown">
-                    <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <div class="media align-items-center">
-                    <div class="media-body">
-                      <span class="name mb-0 text-sm">Siti Saadah</span>
-                    </div>
-                  </div>
-                </th>
-                <td class="budget">
-                  PKN
-                </td>
-                <td>
-                  <span class="badge badge-dot mr-4">
+            @foreach ($data as $dt )
 
-                  </span>
-                </td>
+            <tr>
+                <td>{{$dt->name}}</td>
+                <td>{{$dt->NIP}}</td>
+                <td>{{$dt->gender}}</td>
+                <td>{{$dt->mapel}}</td>
                 <td>
-                  <span class="text-muted"></span>
+                    <button type="button" class="btn btn-primary"> <i class="fas fa-user-edit"></i></button>
+                    <button type="button" class="btn btn-danger"> <i class="fas fa-trash"></i></button>
                 </td>
-                <td><button type="button" class="btn btn-primary">edit</button>
-                  <button type="button" class="btn btn-danger">hapus</button></td>
-                {{-- <td class="text-right">
-                  <div class="dropdown">
-                    <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
-                </td> --}}
-              </tr>
-              <tr>
-              <tr>
-                <th scope="row">
-                  <div class="media align-items-center">
-                    <div class="media-body">
-                      <span class="name mb-0 text-sm">Leni</span>
-                    </div>
-                  </div>
-                </th>
-                <td class="budget">
-                  B Indonesia
-                </td>
-                <td>
-                  <span class="badge badge-dot mr-4">
+            </tr>
 
-                  </span>
-                </td>
-                <td>
-                  <span class="text-muted"></span>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-primary">edit</button>
-                  <button type="button" class="btn btn-danger">hapus</button>
-                </td>
-                <td class="text-right">
-                  <div class="dropdown">
-                    <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <div class="media align-items-center">
-                    <div class="media-body">
-                      <span class="name mb-0 text-sm">Dede Suryana</span>
-                    </div>
-                  </div>
-                </th>
-                <td class="budget">
-                  Basdat
-                </td>
-                <td>
-                  <span class="badge badge-dot mr-4">
+            @endforeach
 
-                  </span>
-                </td>
-                <td>
-                  <span class="text-muted"></span>
-                </td>
-                <td><button type="button" class="btn btn-primary">edit</button>
-                  <button type="button" class="btn btn-danger">hapus</button></td>
-                <td class="text-right">
-                  <div class="dropdown">
-                    <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <tr>
-                  <th scope="row">
-                    <div class="media align-items-center">
-                      <div class="media-body">
-                        <span class="name mb-0 text-sm">Essa</span>
-                      </div>
-                    </div>
-                  </th>
-                  <td class="budget">
-                    B Inggris
-                  </td>
-                  <td>
-                    <span class="badge badge-dot mr-4">
-
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-muted"></span>
-                  </td>
-                  <td><button type="button" class="btn btn-primary">edit</button>
-                    <button type="button" class="btn btn-danger">hapus</button></td>
-                  <td class="text-right">
-                    <div class="dropdown">
-                      <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-ellipsis-v"></i>
-                      </a>
-                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
             </tbody>
           </table>
         </div>

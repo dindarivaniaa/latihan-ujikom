@@ -12,20 +12,12 @@ use Illuminate\Support\Facades\Hash;
 class KelolasiswaController extends Controller
 {
     public function index(){
-        $siswa = DB::table('siswa')->get();
-        return view ('teacher.kelolasiswa',['siswa' =>$siswa]);
+        $data = DB::table('students')
+        ->join('users', 'users.id', '=', 'students.users_id')
+        ->get();
+        return view ('teacher.kelolasiswa',compact('data'));
     }
-    public function editview($id){
-        $siswa = DB::table('siswa')->where('id', $id)->get();
-        return view ('teacher.editkelolasiswa',['siswa' =>$siswa]);
-    }
-    public function edit(Request $request){
-        DB::table('siswa')->where('id',$request->id)->update([
-            'nis' => $request->nis,
-            'nama' => $request->nama
-        ]);
-        return redirect('/teacher/kelolasiswa');
-    }
+
 
      //  tambah siswa
      public function tambahsiswa(){

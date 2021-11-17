@@ -119,7 +119,7 @@
   <!-- Argon CSS -->
   <link rel="stylesheet" href="{{asset('assets/css/argon.min.css')}}?v=1.2.1" type="text/css">
   <!-- Google Tag Manager -->
-  <script>
+  {{-- <script>
     (function(w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -134,7 +134,7 @@
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
-  </script>
+  </script> --}}
   <!-- End Google Tag Manager -->
 </head>
 
