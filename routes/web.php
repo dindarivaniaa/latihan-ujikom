@@ -35,7 +35,10 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('admin/kelolaguru', 'Admin\KelolaguruController@index');
     // tambah guru
     Route::get('admin/tambahguru', 'Admin\KelolaguruController@tambahguru');
+    Route::get('admin/tambahguru2', 'Admin\KelolaguruController@tambahguru2');
+    Route::post('admin/addguru', 'Admin\KelolaguruController@addguru');
     Route::post('admin/storeguru', 'Admin\KelolaguruController@store');
+    Route::get('admin/hapusguru/{id}','Admin\KelolaguruController@hapus');
     // tambah siswa
     Route::get('admin/tambahsiswa','Admin\kelolasiswaController@tambahsiswa');
     Route::post('admin/storesiswa','Admin\kelolasiswaController@store');

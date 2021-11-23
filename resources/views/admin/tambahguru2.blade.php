@@ -6,37 +6,22 @@
          <div class="card">
             <!-- Card header -->
             <div class="card-header">
-              <h3 class="mb-0">Buat Login Guru</h3>
+              <h3 class="mb-0">Tambah Guru</h3>
             </div>
             <!-- Card body -->
             <div class="card-body">
 
-                <form method="POST" action="storeguru">
+                <form method="POST" action="addguru">
                     @csrf
-
-                    <div class="form-group">
-                        <div class="input-group input-group-merge input-group-alternative mb-3">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
-                          </div>
-                          <input id="nomor" type="number" class="form-control @error('nomor') is-invalid @enderror" name="nomor" value="{{ old('nomor') }}" required autocomplete="nomor" placeholder="NIP">
-
-                          @error('nomor')
-                              <span class="invalid-feedback" role="alert">
-                                  <strong>{{ $message }}</strong>
-                              </span>
-                          @enderror
-                        </div>
-                      </div>
 
                   <div class="form-group">
                     <div class="input-group input-group-merge input-group-alternative mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                       </div>
-                      <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" placeholder="Name" autofocus>
+                      <input id="NIP" type="text" class="form-control @error('NIP') is-invalid @enderror" name="NIP" value="{{ old('NIP') }}" required autocomplete="NIP" placeholder="NIP" autofocus>
 
-                      @error('name')
+                      @error('NIP')
                           <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
                           </span>
@@ -46,11 +31,11 @@
                   <div class="form-group">
                     <div class="input-group input-group-merge input-group-alternative mb-3">
                       <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                        <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                       </div>
-                      <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required placeholder="Email" autocomplete="email">
+                      <input id="gender" type="text" class="form-control @error('gender') is-invalid @enderror" name="gender" value="{{ old('gender') }}" required placeholder="Gender" autocomplete="gender">
 
-                      @error('email')
+                      @error('gender')
                           <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
                           </span>
@@ -61,11 +46,11 @@
                   <div class="form-group">
                     <div class="input-group input-group-merge input-group-alternative mb-4">
                       <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                        <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                       </div>
-                      <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password" name="password" required autocomplete="new-password">
+                      <input id="TTL" type="text" class="form-control @error('TTL') is-invalid @enderror" placeholder="TTL" name="TTL" required autocomplete="new-password">
 
-                      @error('password')
+                      @error('TTL')
                           <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
                           </span>
@@ -75,9 +60,18 @@
                   <div class="form-group">
                     <div class="input-group input-group-merge input-group-alternative">
                       <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                        <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                       </div>
-                      <input id="password-confirm" type="password" class="form-control" placeholder="Confirm Password" name="password_confirmation" required autocomplete="new-password">
+                      <input id="agama" type="text" class="form-control" placeholder="Agama" name="agama" required autocomplete="agama">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group input-group-merge input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
+                      </div>
+                      <input id="mapel" type="text" class="form-control" placeholder="Mapel" name="mapel" required autocomplete="mapel">
                     </div>
                   </div>
 
@@ -90,7 +84,7 @@
                     </div>
                   </div>
                   <div class="text-center">
-                    <button type="submit" class="btn btn-primary mt-4">Buat Akun</button>
+                    <button type="submit" class="btn btn-primary mt-4">Kirim</button>
                   </div>
                 </form>
             </div>

@@ -30,7 +30,8 @@
         <!-- Card header -->
         <div class="col-lg-6 col-5 card-header border-0">
           <h2 class="mb-3">Kelola Guru</h2>
-          <a href="{{url('admin/tambahguru')}}" class="btn btn-sm btn-neutral">Tambah Guru</a>
+          <a href="{{url('admin/tambahguru')}}" class="btn btn-sm btn-neutral">Tambah Akun Guru</a>
+          <a href="{{url('admin/tambahguru2')}}" class="btn btn-sm btn-neutral">Tambah Guru</a>
         </div>
         <div class="col-lg-6 col-5 text-right">
           </div>
@@ -59,6 +60,7 @@
                 <td>
                     <button type="button" class="btn btn-primary"> <i class="fas fa-user-edit"></i></button>
                     <button type="button" class="btn btn-danger"> <i class="fas fa-trash"></i></button>
+                    <a href="/admin/hapusguru/{{ $dt->id }}" class="btn btn-danger btn-sm btn-outline-light">Delete</a>
                 </td>
             </tr>
 

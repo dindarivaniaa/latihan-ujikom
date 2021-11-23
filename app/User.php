@@ -6,6 +6,16 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+
+class Guru extends Model
+{
+    use SoftDeletes;
+    protected $table = "guru";
+    protected $dates = ['deleted_at'];
+}
 
 class User extends Authenticatable
 {
@@ -17,7 +27,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'nomor','name', 'email', 'password',
     ];
 
     /**
