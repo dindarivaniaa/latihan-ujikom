@@ -201,7 +201,7 @@
                     <img alt="Image placeholder" src="../assets/img/theme/team-4.jpg">
                   </span>
                   <div class="media-body  ml-2  d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold">Admin</span>
+                    <span class="mb-0 text-sm  font-weight-bold">Drs. Dedi Hidayat, M.Mpd</span>
                   </div>
                 </div>
               </a>
@@ -209,7 +209,7 @@
                 <div class="dropdown-header noti-title">
                   <h6 class="text-overflow m-0">Selamat Datang!</h6>
                 </div>
-                <a href="#!" class="dropdown-item">
+                <a href="{{url('admin/profile')}}" class="dropdown-item">
                   <i class="ni ni-single-02"></i>
                   <span>My profile</span>
                 </a>
@@ -451,7 +451,7 @@
                     <img alt="Image placeholder" src="../assets/img/theme/team-4.jpg">
                   </span>
                   <div class="media-body  ml-2  d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold">Guru</span>
+                    <span class="mb-0 text-sm  font-weight-bold">Raynaldi Syaputra Nonci</span>
                   </div>
                 </div>
               </a>
@@ -459,7 +459,7 @@
                 <div class="dropdown-header noti-title">
                   <h6 class="text-overflow m-0">Welcome!</h6>
                 </div>
-                <a href="#!" class="dropdown-item">
+                <a href="{{url('teacher/profile')}}" class="dropdown-item">
                   <i class="ni ni-single-02"></i>
                   <span>My profile</span>
                 </a>
@@ -700,7 +700,7 @@
                     <img alt="Image placeholder" src="../assets/img/theme/team-4.jpg">
                   </span>
                   <div class="media-body  ml-2  d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold">Murid</span>
+                    <span class="mb-0 text-sm  font-weight-bold">Yunita Rahayu</span>
                   </div>
                 </div>
               </a>
@@ -708,7 +708,7 @@
                 <div class="dropdown-header noti-title">
                   <h6 class="text-overflow m-0">Welcome!</h6>
                 </div>
-                <a href="#!" class="dropdown-item">
+                <a href="{{url('student/profile')}}" class="dropdown-item">
                   <i class="ni ni-single-02"></i>
                   <span>My profile</span>
                 </a>
