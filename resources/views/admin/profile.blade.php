@@ -22,7 +22,7 @@
                        <th bgcolor="#FBFBFB" width="25%" style="border-top: 0px;">NIP</th>
                        <td style="border-top: 0px;"></td>
                        <td rowspan="5" width="15%" style="border-top: 0px;">
-                           <img style="width:113px;" class="img-polaroid" src="https://elearning.smkmahaputra.com/userfiles/images/default_pl.png">
+                           <img style="width:113px;" class="img-polaroid" src="{{asset('assets/img/procwo.png')}}"  >
                        </td>
                    </tr>
                    <tr>

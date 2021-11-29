@@ -23,7 +23,7 @@
                               <th bgcolor="#FBFBFB" width="25%" style="border-top: 0px;">NIS</th>
                               <td style="border-top: 0px;">1920.10.075</td>
                               <td rowspan="5" width="15%" style="border-top: 0px;">
-                                  <img style="width:113px;" class="img-polaroid" src="https://elearning.smkmahaputra.com/userfiles/images/default_siswi.png">
+                                  <img style="width:113px;" class="img-polaroid" src="{{asset('assets/img/procwe.png')}}">
                               </td>
                           </tr>
                           <tr>
