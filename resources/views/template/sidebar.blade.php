@@ -4,7 +4,7 @@
       <!-- Brand -->
       <div class="sidenav-header d-flex align-items-center">
         <a class="navbar-brand" href="../../pages/dashboards/dashboard.html">
-          <img src="{{asset('assets/img/LOGO MAHAPUTRA.png')}}" style="display:block; margin:auto;" class="navbar-brand-img" alt="...">
+          <img src="{{asset('assets/img/LOGO MAHAPUTRA.png')}}" style="display:block; margin:left;" class="ml-5 pl-3 navbar-brand-img" alt="...">
         </a>
         <div class="ml-auto">
           <!-- Sidenav toggler -->

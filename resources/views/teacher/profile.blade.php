@@ -15,42 +15,44 @@
           </div>
         </div>
         <div class="panel-body">
-         <table class="table">
-          <tbody><tr>
-              <th bgcolor="#FBFBFB" width="25%" style="border-top: 0px;">NIP</th>
-              <td style="border-top: 0px;"></td>
-              <td rowspan="5" width="15%" style="border-top: 0px;">
-                  <img style="width:113px;" class="img-polaroid" src="https://elearning.smkmahaputra.com/userfiles/images/default_pl.png">
-              </td>
-          </tr>
-          <tr>
-              <th bgcolor="#FBFBFB">Nama</th>
-              <td>Raynaldi Syahputra Nonci</td>
-          </tr>
-          <tr>
-              <th bgcolor="#FBFBFB">Jenis Kelamin</th>
-              <td>Laki-laki</td>
-          </tr>
-          <tr>
-              <th bgcolor="#FBFBFB">Tempat Lahir</th>
-              <td>Bandung</td>
-          </tr>
-          <tr>
-              <th bgcolor="#FBFBFB">Tanggal Lahir</th>
-              <td>25 Desember 1995</td>
-          </tr>
-          <tr>
-              <th bgcolor="#FBFBFB">Alamat</th>
-              <td colspan="2">TCI FB12</td>
-          </tr>
-          <tr>
-              <th bgcolor="#FBFBFB">Status</th>
-              <td colspan="2">
-                 Aktif
-              </td>
-          </tr>
-      </tbody>
-    </table>
+            <div class="table-responsive">
+                <table class="table">
+                   <tbody><tr>
+                         <th bgcolor="#FBFBFB" width="25%" style="border-top: 0px;">NIP</th>
+                         <td style="border-top: 0px;"></td>
+                         <td rowspan="5" width="15%" style="border-top: 0px;">
+                             <img style="width:113px;" class="img-polaroid" src="https://elearning.smkmahaputra.com/userfiles/images/default_pl.png">
+                         </td>
+                     </tr>
+                     <tr>
+                         <th bgcolor="#FBFBFB">Nama</th>
+                         <td>Raynaldi Syahputra Nonci</td>
+                     </tr>
+                     <tr>
+                         <th bgcolor="#FBFBFB">Jenis Kelamin</th>
+                         <td>Laki-laki</td>
+                     </tr>
+                     <tr>
+                         <th bgcolor="#FBFBFB">Tempat Lahir</th>
+                         <td>Bandung</td>
+                     </tr>
+                     <tr>
+                         <th bgcolor="#FBFBFB">Tanggal Lahir</th>
+                         <td>25 Desember 1995</td>
+                     </tr>
+                     <tr>
+                         <th bgcolor="#FBFBFB">Alamat</th>
+                         <td colspan="2">TCI FB12</td>
+                     </tr>
+                     <tr>
+                         <th bgcolor="#FBFBFB">Status</th>
+                         <td colspan="2">
+                            Aktif
+                         </td>
+                     </tr>
+                 </tbody>
+               </table>
+            </div>
   </div>
 </div>
 
