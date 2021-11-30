@@ -51,6 +51,7 @@ class KelolasiswaController extends Controller
         // $guru = Guru::find($nomor)->firstOrFail();
     	$siswa->delete();
         return redirect('/admin/kelolasiswa');
+
     }
 
 
