@@ -14,55 +14,57 @@
               <button type="button" class="btn btn-primary"> <i class="fas fa-user-edit"></i></button>
             </div>
           </div>
-  
+
           <div class="panel-body">
-            <table class="table">
-                <tbody>
-                  <tr>
-                    <th bgcolor="#FBFBFB" width="25%" style="border-top: 0px;">NIS</th>
-                    <td style="border-top: 0px;">1920.10.075</td>
-                    <td rowspan="5" width="15%" style="border-top: 0px;">
-                        <img style="width:113px;" class="img-polaroid" src="https://elearning.smkmahaputra.com/userfiles/images/default_siswi.png">
-                    </td>
-                </tr>
-                <tr>
-                    <th bgcolor="#FBFBFB">Nama</th>
-                    <td>Yunita Rahayu</td>
-                </tr>
-                <tr>
-                    <th bgcolor="#FBFBFB">Jenis Kelamin</th>
-                    <td>Perempuan</td>
-                </tr>
-                <tr>
-                    <th bgcolor="#FBFBFB">Tahun Masuk</th>
-                    <td colspan="2">2019</td>
-                </tr>
-                <tr>
-                    <th bgcolor="#FBFBFB">Tempat Lahir</th>
-                    <td>Bandung</td>
-                </tr>
-                <tr>
-                    <th bgcolor="#FBFBFB">Tanggal Lahir</th>
-                    <td>26 Juli 2003</td>
-                </tr>
-                <tr>
-                    <th bgcolor="#FBFBFB">Agama</th>
-                    <td colspan="2">ISLAM</td>
-                </tr>
-                <tr>
-                    <th bgcolor="#FBFBFB">Alamat</th>
-                    <td colspan="2">kp ciawitali girang</td>
-                </tr>
-                <tr>
-                    <th bgcolor="#FBFBFB">Status</th>
-                    <td colspan="2">
-                       Aktif
-                   </td>
-                </tr>
-            </tbody>
-          </table>
+              <div class="table-responsive">
+                  <table class="table">
+                      <tbody>
+                            <tr>
+                              <th bgcolor="#FBFBFB" width="25%" style="border-top: 0px;">NIS</th>
+                              <td style="border-top: 0px;">1920.10.075</td>
+                              <td rowspan="5" width="15%" style="border-top: 0px;">
+                                  <img style="width:113px;" class="img-polaroid" src="{{asset('assets/img/procwe.png')}}">
+                              </td>
+                          </tr>
+                          <tr>
+                              <th bgcolor="#FBFBFB">Nama</th>
+                              <td>Yunita Rahayu</td>
+                          </tr>
+                          <tr>
+                              <th bgcolor="#FBFBFB">Jenis Kelamin</th>
+                              <td>Perempuan</td>
+                          </tr>
+                          <tr>
+                              <th bgcolor="#FBFBFB">Tahun Masuk</th>
+                              <td colspan="2">2019</td>
+                          </tr>
+                          <tr>
+                              <th bgcolor="#FBFBFB">Tempat Lahir</th>
+                              <td>Bandung</td>
+                          </tr>
+                          <tr>
+                              <th bgcolor="#FBFBFB">Tanggal Lahir</th>
+                              <td>26 Juli 2003</td>
+                          </tr>
+                          <tr>
+                              <th bgcolor="#FBFBFB">Agama</th>
+                              <td colspan="2">ISLAM</td>
+                          </tr>
+                          <tr>
+                              <th bgcolor="#FBFBFB">Alamat</th>
+                              <td colspan="2">kp ciawitali girang</td>
+                          </tr>
+                          <tr>
+                              <th bgcolor="#FBFBFB">Status</th>
+                              <td colspan="2">
+                                 Aktif
+                             </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
         </div>
-  
+
         <br>
         <div class="row-fluid">
           <div class="span6">
@@ -102,7 +104,7 @@
                       <button type="button" class="btn btn-primary"> <i class="fas fa-user-edit"></i></button>
                     </div>
                   </div>
-  
+
                   <br>
                   <div class="panel-body">
                       <table class="table">
@@ -125,5 +127,5 @@
               </div>
           </div>
       </div>
-  
+
 @endsection
