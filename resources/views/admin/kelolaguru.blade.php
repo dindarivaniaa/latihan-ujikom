@@ -59,8 +59,7 @@
                 <td>{{$dt->mapel}}</td>
                 <td>
                     <button type="button" class="btn btn-primary"> <i class="fas fa-user-edit"></i></button>
-                    <button type="button" class="btn btn-danger"> <i class="fas fa-trash"></i></button>
-                    <a href="/admin/hapusguru/{{ $dt->id }}" class="btn btn-danger btn-sm btn-outline-light">Delete</a>
+                    <a class="btn btn-danger" href="/admin/hapusguru/{{ $dt->nomor }}" role="button"><i class="fas fa-trash"></i></a>
                 </td>
             </tr>
 

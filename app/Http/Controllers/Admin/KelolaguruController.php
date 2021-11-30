@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Guru;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
@@ -13,18 +14,24 @@ use Illuminate\Support\Facades\Hash;
 class KelolaguruController extends Controller
 {
     public function index(){
+        $null= NULL;
         $data = DB::table('teachers')
                 ->join('users', 'users.nomor', '=', 'teachers.NIP')
+                ->where('teachers.deleted_at', '=', $null)
                 ->get();
         return view ('admin.kelolaguru',compact('data'));
     }
 
-    public function hapus($id)
+    public function hapus($nomor)
     {
-        Guru::findOrFail($id)->delete();
+        // Guru::findOrFail($id)->delete();
         // $guru = Guru::where('id',$id)->firstOrFail();
         // // $guru = Guru::find($id);
         // $guru->delete();
+        // $guru = Guru::find($id);
+        $guru = Guru::where('NIP',$nomor)->firstOrFail();
+        // $guru = Guru::find($nomor)->firstOrFail();
+    	$guru->delete();
         return redirect('/admin/kelolaguru');
     }
 
