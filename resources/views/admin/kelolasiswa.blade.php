@@ -33,8 +33,10 @@
         <!-- Card header -->
         <div class="card-header border-0">
           <h2 class="mb-3">Kelola Siswa</h2>
-          <a href="{{url('admin/tambahsiswa')}}" class="btn btn-sm btn-neutral">Tambah Siswa</a>
+          <a href="{{url('admin/tambahsiswa')}}" class="btn btn-sm btn-neutral">Tambah Akun Siswa</a>
+          <a href="{{url('admin/tambahsiswa2')}}" class="btn btn-sm btn-neutral">Tambah Siswa</a>
         </div>
+
         <!-- Light table -->
         <div class="table-responsive">
           <table class="table align-items-center table-flush">
@@ -57,7 +59,8 @@
                     <td>{{$dt->gender}}</td>
                     <td>
                         <button type="button" class="btn btn-primary"> <i class="fas fa-user-edit"></i></button>
-                        <button type="button" class="btn btn-danger"> <i class="fas fa-trash"></i></button>
+                        <a class="btn btn-danger" href="/admin/hapussiswa/{{ $dt->nomor }}" role="button"><i class="fas fa-trash"></i></a>
+                    </td>
                     </td>
                 </tr>
 

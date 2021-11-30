@@ -38,10 +38,15 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('admin/tambahguru2', 'Admin\KelolaguruController@tambahguru2');
     Route::post('admin/addguru', 'Admin\KelolaguruController@addguru');
     Route::post('admin/storeguru', 'Admin\KelolaguruController@store');
-    Route::get('admin/hapusguru/{id}','Admin\KelolaguruController@hapus');
+    Route::get('admin/hapusguru/{nomor}','Admin\KelolaguruController@hapus');
     // tambah siswa
     Route::get('admin/tambahsiswa','Admin\kelolasiswaController@tambahsiswa');
     Route::post('admin/storesiswa','Admin\kelolasiswaController@store');
+    Route::get('admin/tambahsiswa2', 'Admin\KelolasiswaController@tambahsiswa2');
+    Route::post('admin/addsiswa','Admin\kelolasiswaController@addsiswa');
+    Route::get('admin/hapussiswa/{nomor}','Admin\KelolasiswaController@hapus');
+
+
 
 });
 
